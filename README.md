@@ -1,4 +1,4 @@
-# EmployeInsight & JobCompass Vagrant Box #
+# EmployInsight & JobCompass Vagrant Box #
 
 This Vagrant box is provisioned via Puppet and a few shell scripts.
 
