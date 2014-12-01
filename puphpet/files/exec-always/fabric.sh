@@ -9,3 +9,6 @@ sudo pip install fogbugz
 
 # Fabric
 sudo pip install fabric
+
+# Installed pcrypto after Fabric was installed
+sudo pip install pycrypto
