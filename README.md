@@ -37,12 +37,15 @@ VirtualBox and Vagrant need to be installed on your local machine before you pro
 
 ### Clone this repo to your local machine ###
 For example:
-```
+```shell
 $ git clone git@github.com:patkruk/jobcompass-vagrant.git jobcompass
 $ cd jobcompass
 ```
 
 ### Boot the VM up ###
-```
+```shell
 $ vagrant up
 ```
+
+### NFS Shared Folder ###
+To configure NFS, Vagrant must modify system files on the host. Therefore, at some point during the vagrant up sequence, you may be prompted for administrative privileges (via the typical sudo program). These privileges are used to modify /etc/exports as well as to start and stop the NFS server daemon.
