@@ -48,4 +48,4 @@ $ vagrant up
 ```
 
 ### NFS Shared Folder ###
-To configure NFS, Vagrant must modify system files on the host. Therefore, at some point during the vagrant up sequence, you may be prompted for administrative privileges (via the typical sudo program). These privileges are used to modify /etc/exports as well as to start and stop the NFS server daemon.
+To configure NFS, Vagrant must modify system files on the host. Therefore, at some point during the "vagrant up" sequence, you may be prompted for administrative privileges (via the typical sudo program). These privileges are used to modify /etc/exports as well as to start and stop the NFS server daemon.
