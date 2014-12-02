@@ -1,3 +1,4 @@
 #!/bin/sh
 
-sudo apt-get install libpq-dev
+# Needed by Python-PostgreSQL adapter
+sudo apt-get -y install libpq-dev
