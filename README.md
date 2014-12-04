@@ -51,7 +51,7 @@ $ vagrant up
 To configure NFS, Vagrant must modify system files on the host. Therefore, at some point during the "vagrant up" sequence, you may be prompted for administrative privileges (via the typical sudo program). These privileges are used to modify /etc/exports as well as to start and stop the NFS server daemon.
 
 ### Troubleshooting: ###
-If during the "vagrant up" sequence, vagrant stops and displays the following message in red:
+There is currently a small bug where virtualenv is not being installed on initial $ vagrant up. The solution is simple: just run $ vagrant provision and virtualenv will be installed for your chosen Python version. If during the "vagrant up" sequence, vagrant stops and displays the following message in red:
 
 ```shell
 The SSH command responded with a non-zero exit status. Vagrant
