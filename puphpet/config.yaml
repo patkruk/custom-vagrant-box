@@ -4,13 +4,13 @@ vagrantfile-local:
         box: puphpet/debian75-x64
         box_url: puphpet/debian75-x64
         hostname: ''
-        memory: '512'
+        memory: '1024'
         cpus: '1'
         chosen_provider: virtualbox
         network:
             private_network: 192.168.56.101
             forwarded_port:
-                xNSY9FVKFg5y:
+                sjzQrprbTIT3:
                     host: '8847'
                     guest: '22'
         post_up_message: ''
@@ -32,7 +32,9 @@ vagrantfile-local:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
-            4dTGXagyznx8:
+            LjA0XoGuPa4s:
+                owner: ''
+                group: ''
                 source: ./
                 target: /var/www
                 sync_type: nfs
@@ -82,7 +84,7 @@ apache:
     modules:
         - rewrite
     vhosts:
-        vn956f5BLNdc:
+        0qxre5FJhOH9:
             servername: jobcompass.local
             serveraliases:
                 - jobcompass.local
@@ -98,7 +100,6 @@ apache:
                 - MultiViews
             engine: none
             custom_fragment: ''
-            ssl: '0'
             ssl_cert: ''
             ssl_key: ''
             ssl_chain: ''
@@ -110,8 +111,10 @@ nginx:
         default_vhost: 1
         proxy_buffer_size: 128k
         proxy_buffers: '4 256k'
+    upstreams: {  }
     vhosts:
-        IW94Qu8hs7uc:
+        ezSuj5D4FbHY:
+            proxy: ''
             server_name: awesome.dev
             server_aliases:
                 - www.awesome.dev
@@ -125,6 +128,7 @@ nginx:
             envvars:
                 - 'APP_ENV dev'
             engine: php
+            client_max_body_size: 1m
             ssl_cert: ''
             ssl_key: ''
 php:
@@ -169,19 +173,21 @@ xdebug:
         xdebug.remote_port: '9000'
 xhprof:
     install: '0'
+wpcli:
+    install: '0'
+    version: ''
 drush:
     install: '0'
     version: 6.3.0
 ruby:
     install: '1'
     versions:
-        tekCzzsjjKdD:
+        vJKLYUuZt5DN:
             default: '1'
             version: 1.9.3
             gems:
-                - sass
-                - compass
-            bundler: '0'
+                - sass@3.1
+                - compass@0.12.1
 nodejs:
     install: '1'
     npm_packages:
@@ -194,7 +200,7 @@ python:
         - pip
         - virtualenv
     versions:
-        qpCfQVga61Bz:
+        B2bJ0U8gDMLP:
             version: 2.7.6
             virtualenv: '1'
 mysql:
@@ -203,7 +209,7 @@ mysql:
     root_password: '123'
     adminer: 0
     databases:
-        zkcEgpAcr2RM:
+        byF27UUYlt5Y:
             grant:
                 - ALL
             name: dbname
@@ -217,7 +223,7 @@ postgresql:
         root_password: root
         user_group: postgres
         encoding: UTF8
-        version: '9.3'
+        version: '9.1'
     databases: {  }
     adminer: 0
 mariadb:
@@ -238,7 +244,7 @@ mongodb:
         port: '27017'
     databases: {  }
 redis:
-    install: '0'
+    install: '1'
     settings:
         conf_port: '6379'
 mailcatcher:

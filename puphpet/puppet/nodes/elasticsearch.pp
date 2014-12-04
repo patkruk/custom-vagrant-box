@@ -16,4 +16,3 @@ if hash_key_equals($elasticsearch_values, 'install', 1) {
 
   create_resources('class', { 'elasticsearch' => $elasticsearch_settings })
 }
-
