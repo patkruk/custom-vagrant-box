@@ -5,7 +5,7 @@ sudo pip install fabric
 echo ******************** fabric installed ********************
 
 # Fabric's post-install dependencies
-sudo pip install pycrypto
+sudo pip install pycrypto==2.1
 echo ******************** pycrypto installed ********************
 sudo pip install boto
 echo ******************** boto installed ********************
