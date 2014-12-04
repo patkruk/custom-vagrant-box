@@ -185,6 +185,9 @@ ruby:
         vJKLYUuZt5DN:
             default: '1'
             version: 1.9.3
+            gems:
+                - sass@3.1
+                - compass@0.12.2
             bundler: '0'
 nodejs:
     install: '1'
