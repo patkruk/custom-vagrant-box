@@ -12,8 +12,8 @@ This Vagrant box is provisioned via Puppet and a few shell scripts.
 * SciPy
 * Numpy
 * Ruby 1.9.3
-* SASS
-* Compass
+* SASS 3.2
+* Compass 0.12.2
 * OpenJRE
 * OpenJDK
 * Node.js
@@ -22,7 +22,7 @@ This Vagrant box is provisioned via Puppet and a few shell scripts.
 * Gulp
 * Git
 * Mercurial
-* PostgresSQL 9.3
+* PostgresSQL 9.1
 * Sqlite3
 * Apache2
 
