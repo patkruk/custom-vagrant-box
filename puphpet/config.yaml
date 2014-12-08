@@ -13,6 +13,9 @@ vagrantfile-local:
                 sjzQrprbTIT3:
                     host: '8847'
                     guest: '22'
+                1ncRyhfVX36d:
+                    host: '8000'
+                    guest: '8000'
         post_up_message: ''
         provider:
             virtualbox:
@@ -83,6 +86,7 @@ apache:
         sendfile: 0
     modules:
         - rewrite
+        - ssl
     vhosts:
         0qxre5FJhOH9:
             servername: jobcompass.local
